@@ -12,7 +12,7 @@ public:
         for(int i=0;i<n;i++)
         {
             buyatprice=min(buyatprice,prices[i]);
-            maxprofit=max(maxprofit,prices[i]);
+            maxprofit=max(maxprofit,prices[i]-buyatprice);
 
         }
         return maxprofit;
